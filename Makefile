@@ -47,4 +47,4 @@ migrate-db-force-%:
 
 # Only used for local dev
 init-local-db:
-	docker exec cantata-postgres bash -c "psql -U cb_test -d cb_test -f /testdata/init_local_dev.sql"
+	docker exec cb-postgres bash -c "psql -U cb_test -d cb_test -f /testdata/init_local_dev.sql"
